@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Página Principal</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylePrincipal.css">
 </head>
 <body>
     <div class="container">
         <h1>Página Principal</h1>
         <p>Haz clic en el nombre para ver la página del personal:</p>
-        <ul>
-            <li><a href="paginaBorja.html">Borja Gómez Castaño</a></li>
-            <li><a href="paginaOscar.html">Oscar Peña Tienza</a></li>
-            <li><a href="paginaAndres.html">Andrés Madruga Romero</a></li>
+        <div class="grid">
+            <div class="grid-item borja">
+                <a href="paginaBorja.html">Borja Gómez Castaño</a>
+            </div>
+            <div class="grid-item oscar">
+                <a href="paginaOscar.html">Oscar Peña Tienza</a>
+            </div>
+            <div class="grid-item andres">
+                <a href="paginaAndres.html">Andrés Madruga Romero</a>
+            </div>
             <!-- Puedes añadir más personas así:
-            <li><a href="nombre_apellido.html">Nombre Apellido</a></li>
+            <div class="grid-item nombre">
+                <a href="nombre_apellido.html">Nombre Apellido</a>
+            </div>
             -->
-        </ul>
+        </div>
     </div>
 </body>
 </html>
