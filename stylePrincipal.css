@@ -95,6 +95,10 @@ p {
 .grid-item.andrea {
     background: linear-gradient(135deg, #ffe259 60%, #ffa751 100%);
 }
+.grid-item.alvaro {
+    grid-column: 1 / -1; /* Ocupa todas las columnas */
+    background: linear-gradient(135deg, #8a3f94 60%, #614f91 100%);
+}
 
 .grid-item:hover {
     transform: translateY(-8px) scale(1.04);
