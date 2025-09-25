@@ -5,7 +5,8 @@
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 10px;
-    border: 2px solid #b2bec3;
+    border: 2px solid #353b48;
+    box-shadow: 0 2px 12px #111;
 }
 
 .grid-item {
@@ -13,9 +14,21 @@
     align-items: center;
     justify-content: flex-start;
     min-height: 220px;
+    background: #23293a;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.38);
+    padding: 18px 12px;
+    text-align: center;
+    width: 180px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-size: 1.18rem;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    border: 1.5px solid #353b48;
 }
 body {
-    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    background: linear-gradient(135deg, #23293a 0%, #23293a 60%, #2d3a4a 100%);
     min-height: 100vh;
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
@@ -23,32 +36,34 @@ body {
 
 .container {
     max-width: 1200px;
-    margin: 40px auto;
-    background: rgba(255,255,255,0.85);
+    margin: 100px auto;
+    background: rgba(34, 40, 49, 0.97);
     border-radius: 18px;
-    box-shadow: 0 8px 32px rgba(44,62,80,0.12);
+    box-shadow: 0 12px 40px rgba(44, 62, 80, 0.55);
     padding: 32px 24px;
 }
 
 h1 {
     text-align: center;
     font-size: 2.5em;
-    color: #2d3e50;
+    color: #f5f6fa;
     margin-bottom: 16px;
     letter-spacing: 2px;
+    text-shadow: 0 2px 12px #222;
 }
 
 p {
     text-align: center;
-    color: #34495e;
+    color: #b2bec3;
     font-size: 1.15em;
     margin-bottom: 2em;
+    text-shadow: 0 1px 6px #222;
 }
 
 .grid {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
     gap: 32px;
     flex-wrap: wrap;
@@ -56,50 +71,84 @@ p {
 }
 
 .grid-item {
-    background: #f7fafc;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 220px;
+    background: #23293a;
     border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.38);
     padding: 18px 12px;
     text-align: center;
     width: 180px;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
     font-size: 1.18rem;
     font-weight: 600;
     position: relative;
     overflow: hidden;
+    border: 1.5px solid #353b48;
 }
 
 .grid-item a {
     display: block;
     font-weight: bold;
-    color: #2980b9;
+    color: #f5f6fa;
     text-decoration: none;
     margin-bottom: 6px;
     font-size: 1.08em;
-    text-shadow: 2px 2px 10px rgba(60, 72, 88, 0.5);
+    text-shadow: 0 2px 12px #222;
     letter-spacing: 0.5px;
     z-index: 2;
     position: relative;
+    padding: 6px 0;
+    border-radius: 6px;
+    transition: color 0.2s, background 0.2s;
+}
+
+.grid-item a:hover {
+    color: #00a8ff;
+    background: rgba(255,255,255,0.08);
 }
 
 .grid-item.borja {
-    background: linear-gradient(135deg, #0074D9 60%, #00c6ff 100%);
+    background: linear-gradient(135deg, #23293a 60%, #273c75 100%);
+    border: 2px solid #273c75;
 }
 .grid-item.oscar {
-    background: linear-gradient(135deg, #2ECC40 60%, #a8ff78 100%);
+    background: linear-gradient(135deg, #23293a 60%, #218c5b 100%);
+    border: 2px solid #218c5b;
 }
 .grid-item.andres {
-    background: linear-gradient(135deg, #FF4136 60%, #ffb199 100%);
+    background: linear-gradient(135deg, #23293a 60%, #c23616 100%);
+    border: 2px solid #c23616;
 }
 .grid-item.andrea {
-    background: linear-gradient(135deg, #ffe259 60%, #ffa751 100%);
+    background: linear-gradient(135deg, #23293a 60%, #e1b12c 100%);
+    border: 2px solid #e1b12c;
 }
 .grid-item.alvaro {
-    grid-column: 1 / -1; /* Ocupa todas las columnas */
-    background: linear-gradient(135deg, #8a3f94 60%, #614f91 100%);
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, #23293a 60%, #8c7ae6 100%);
+    border: 2px solid #8c7ae6;
 }
 
 .grid-item:hover {
     transform: translateY(-6px) scale(1.04);
-    box-shadow: 0 6px 24px rgba(44,62,80,0.18);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.55);
+    border-color: #00a8ff;
+}
+
+.rol {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 10px;
+    background: linear-gradient(90deg, #2d3a4a 60%, #353b48 100%);
+    color: #e1eafc;
+    font-size: 0.98em;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(44, 62, 80, 0.35);
+    font-weight: 500;
+    text-shadow: 0 1px 4px #222;
+    border: 1px solid #273c75;
+    letter-spacing: 0.5px;
 }
