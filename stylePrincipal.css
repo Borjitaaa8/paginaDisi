@@ -131,6 +131,11 @@ p {
     background: linear-gradient(135deg, #23293a 60%, #8c7ae6 100%);
     border: 2px solid #8c7ae6;
 }
+.grid-item.grupo {
+    background: linear-gradient(135deg, #23293a 60%, #00a8ff 100%);
+    border: 2px solid #00a8ff;
+    grid-column: 1 / -1; /* Ocupará toda la fila si hay espacio */
+}
 
 .grid-item:hover {
     transform: translateY(-6px) scale(1.04);
@@ -151,4 +156,12 @@ p {
     text-shadow: 0 1px 4px #222;
     border: 1px solid #273c75;
     letter-spacing: 0.5px;
+}
+
+.info-grupo {
+    text-align: center;
+    color: #f5f6fa;
+    font-size: 1.18em;
+    margin-bottom: 1.2em;
+    text-shadow: 0 2px 12px #222;
 }
